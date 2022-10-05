@@ -10,7 +10,7 @@ export class Home extends Component {
 		posts: [],
 		allPosts: [],
 		page: 0,
-		postsPerPage: 2,
+		postsPerPage: 10,
 		searchValue: "",
 	};
 
@@ -53,8 +53,7 @@ export class Home extends Component {
 				<div className="search-container">
 					<TextInput
 						searchValue={searchValue}
-						handleChange={this.handleChange} 
-						
+						handleChange={this.handleChange}
 					/>
 				</div>
 				{/* curto circuito */}
